@@ -1,4 +1,3 @@
-from sqlite3 import DatabaseError
 import time
 from datetime import datetime
 from datetime import timedelta

@@ -1,9 +1,7 @@
 import copy
-from distutils.log import Log
 import time
 
 from datetime import datetime
-from typing import final
 from urllib import request
 from .strategy import Stratgy
 from .log_manager import LogManager

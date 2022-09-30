@@ -1,5 +1,3 @@
-from concurrent.futures import thread
-from distutils.log import Log
 import queue
 import threading
 from .log_manager import LogManager
