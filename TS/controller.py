@@ -151,7 +151,7 @@ class Controller:
         print("잘못된 명령어가 입력 되었습니다.")
 
     def _on_query_command(self, value):
-        """ 가이드 문구 출력 """
+        """ value 커맨드 처리 담당 """
         key = value.lower()
         if key in ["state", "1"]:
             print(f"현재 상태: {self.operator.state}")

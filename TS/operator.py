@@ -120,7 +120,7 @@ class Operator:
                     self.analyzer.put_requests(target_request)
                     self.trader.send_request(target_request, send_request_callback)
                     
-                time.sleep(1/9)
+                time.sleep(1/10)
 
         except (AttributeError, TypeError) as msg:
             self.logger.error(f"excuting fail {msg}")

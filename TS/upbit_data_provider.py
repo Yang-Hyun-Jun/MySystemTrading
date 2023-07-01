@@ -50,7 +50,7 @@ class UpbitDataProvider(DataProvider):
         """
         날짜를 입력으로 받아서 과거 데이터 프레임 로드 
         """
-        strat, end, count = DateConverter.to_end_min(from_dash_to)
+        start, end, count = DateConverter.to_end_min(from_dash_to)
         self.query_string["to"] = DateConverter.from_kst_to_utc_str(end) + "Z"
         self.query_string["count"] = count
         response = self.upbit_api.get_data_from_server(url=self.URL, params=self.query_string)

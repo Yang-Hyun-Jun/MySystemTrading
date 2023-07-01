@@ -89,7 +89,7 @@ class StrategyBuyAndSell(Stratgy):
             "date_time": 요청 생성 시간, 시뮬레이션에서는 데이터 시간
         }]
         """ 
-        mean_price = 27875000.0
+        mean_price = 29000000.0
         trading_request = None
 
         if self.is_initialized is not True:
@@ -117,7 +117,7 @@ class StrategyBuyAndSell(Stratgy):
 
             # 매도 주문 
             # if (last_closing_price < mean_price) or (last_closing_price/mean_price -1 >= 0.01):
-            if (last_closing_price/mean_price -1 >= 0.01):
+            if (last_closing_price/mean_price -1 >= 0.03):
                 if self.hold is True and self.hold != "ready":
                     for result in self.result:
                         if result["request"]["id"] == self.last_buy_id:

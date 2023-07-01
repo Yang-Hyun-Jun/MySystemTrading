@@ -247,6 +247,7 @@ class UpbitAPI:
         return self._request_get(self.SERVER_URL + "/v1/trades/ticks/", params=querystring)
 
     
+
     @staticmethod
     def _create_limit_order_query(market, is_buy, price, volume):
         """ 
